@@ -61,7 +61,7 @@ class Setup {
 
       }
 
-      this.enableUnicodeKeyboard();
+      //this.enableUnicodeKeyboard();
 
     } catch (error) {
 
