@@ -192,9 +192,7 @@ class Setup {
 
     try {
 
-      this._uiautomator_process = proc.spawn('adb', this._serialArr().concat(['shell', 'am', 'instrument', '-w',
-        'com.github.uiautomator.test/android.support.test.runner.AndroidJUnitRunner'
-      ]));
+      this._uiautomator_process = proc.spawn('adb', this._serialArr().concat(['shell', 'am', 'instrument', '-w', '-r', '-e', 'debug', 'false', '-e', 'class', 'com.github.uiautomator.stub.Stub', 'com.github.uiautomator.test/androidx.test.runner.AndroidJUnitRunner']));;
 
     } catch (error) {
 
