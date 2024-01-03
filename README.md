@@ -15,7 +15,7 @@ _Note: This module is using UIAutomator version 2.1.3_
 ## Installation
 
 ```cli
-npm install github:ferhacks/uiautomator-server
+npm install github:ferhacks/uiautomator
 ```
 
 ## Usage
